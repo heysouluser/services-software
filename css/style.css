@@ -68,6 +68,10 @@ body {
    display: none;
 }
 
+.header__button {
+   background-color: #fff;
+}
+
 .main__info {
    background-color: #f8f8f8;
    padding: 24px 16px 35px;
