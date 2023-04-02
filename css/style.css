@@ -102,15 +102,16 @@ body {
    overflow-x: auto;
    margin-bottom: 24px;
 }
-.main__item {
+.main__button {
    white-space: nowrap;
    height: 40px;
    padding: 8px 16px;
    font-size: 16px;
    color: #7e7e82;
    cursor: pointer;
+   background-color: #f8f8f8;
 }
-.main__item--active {
+.main__button--active {
    background: #ffffff;
    border: 2px solid #b8ffec;
    border-radius: 6px;
@@ -213,6 +214,9 @@ body {
    .main__text:not(:nth-of-type(1)) {
       display: block;
    }
+   .main__image {
+      border-radius: 7px;
+   }
 }
 
 @media (min-width: 1120px) {
@@ -273,6 +277,10 @@ body {
    .main__list {
       overflow-x: hidden;
       flex-wrap: wrap;
+      margin-bottom: 16px;
+   }
+   .main__image {
+      margin-top: -9px;
    }
    .fs-text {
       display: inline;
