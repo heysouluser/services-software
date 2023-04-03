@@ -13,87 +13,72 @@
 </head>
 
 <body>
-   <div class="wrapper">
-      <header class="header">
-         <div class="container">
-            <nav class="header__row">
-               <ul class="header__list">
-                  <li>
-                     <ul class="header__list--part1">
-                        <li class="header__item"><button class="header__button"><img
-                                 src="./images/icons/menu/burger.svg" class="header__image" alt="Бургер-меню"></button>
-                        </li>
-                        <li class="header__item"><a class="header__link" href="#"><img
-                                 src="./images/icons/menu/Group.png " class="header__image" alt="Лого"></a></li>
-                     </ul>
-                  </li>
-                  <li>
-                     <ul class="header__list--part2">
-                        <li class="header__item"><button class="header__button"><img src="./images/icons/menu/call.svg"
-                                 class="header__image" alt="Позвонить"></button></li>
-                        <li class="header__item"><button class="header__button"><img src="./images/icons/menu/chat.svg"
-                                 class="header__image" alt="Чат"></button></li>
-                        <li class="header__item"><button class="header__button"><img
-                                 src="./images/icons/menu/profile.svg" class="header__image" alt="Профиль"></button>
-                        </li>
-                        <li class="header__item"><button class="header__button"><img
-                                 src="./images/icons/menu/repair.svg" class="header__image" alt="Ремонт"></button></li>
-                        <li class="header__item"><button class="header__button"><img
-                                 src="./images/icons/menu/checkstatus.svg" class="header__image"
-                                 alt="Статус заказа"></button>
-                     </ul>
-                  </li>
-               </ul>
-            </nav>
-            <div class="header__row header__row--fs">
-               <h1 class="header__title title">Услуги и сервисы</h1>
-               <div class="header__items">
-                  <button class="header__button">Оставить заявку</button>
-                  <button class="header__button">Статус ремонта</button>
-               </div>
+   <header class="header">
+      <nav class="header__row">
+         <div class="header__info">
+            <button class="header__button"><img src="./images/icons/menu/burger.svg" class="header__image"
+                  alt="Бургер-меню"></button>
+            <a class="header__link" href="#"><img src="./images/icons/menu/Group.png " class="header__image"
+                  alt="Лого"></a>
+         </div>
+         <ul class="header__actions">
+            <li class="header__item"><button class="header__button"><img src="./images/icons/menu/call.svg"
+                     class="header__image" alt="Позвонить"></button></li>
+            <li class="header__item"><button class="header__button"><img src="./images/icons/menu/chat.svg"
+                     class="header__image" alt="Чат"></button></li>
+            <li class="header__item"><button class="header__button"><img src="./images/icons/menu/profile.svg"
+                     class="header__image" alt="Профиль"></button>
+            </li>
+            <li class="header__item"><button class="header__button"><img src="./images/icons/menu/repair.svg"
+                     class="header__image" alt="Ремонт"></button></li>
+            <li class="header__item"><button class="header__button"><img src="./images/icons/menu/checkstatus.svg"
+                     class="header__image" alt="Статус заказа"></button>
+         </ul>
+      </nav>
+   </header>
+   <main class="main">
+      <section class="main__info">
+         <div class="main__row">
+            <h1 class="main__title title">Услуги и сервисы</h1>
+            <div class="main__actions">
+               <button class="main__action">Оставить заявку</button>
+               <button class="main__action">Статус ремонта</button>
             </div>
          </div>
-      </header>
-      <main class="main">
-         <div class="container">
-            <section class="main__info">
-               <h1 class="main__title title">Услуги и сервисы</h1>
-               <ul class="main__list">
-                  <li class="main__item "><button class="main__button main__button--active">Ремонтируемые
-                        устройства</button></li>
-                  <li class="main__item"><button class="main__button">Дополнительные услуги</button></li>
-                  <li class="main__item"><button class="main__button">Цены на услуги</button></li>
-                  <li class="main__item"><button class="main__button">Специальные цены</button></li>
-                  <li class="main__item"><button class="main__button">Адреса сервисных центров</button></li>
-                  <li class="main__item"><button class="main__button">Отзывы</button></li>
-               </ul>
-               <div class="main__company">
-                  <div class="main__about">
-                     <p class="main__text">
-                        Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
-                        отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-                     </p>
-                     <p class="main__text">
-                        Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера <span class="fs-text">,
-                           что подтверждает большое количество постоянных
-                           клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют
-                           нас родным и близким.</span>
-                     </p>
-                     <div class="main__more-text">
-                        <button class="main__next-text">Читать далее</button>
-                     </div>
-                  </div>
-                  <picture class="main__pic">
-                     <source srcset="images/img.jpg" type="image/jpeg" media="(min-width:1120px)">
-                     <source srcset="images/img-768.jpg" type="image/jpeg" media="(min-width:768px)">
-                     <source srcset="images/img-320.jpg" type="image/jpeg" media="(max-width:768px)">
-                     <img class="main__image" src="images/img.jpg" alt="Наша компания">
-                  </picture>
+         <nav class="main__navigation">
+            <a class="main__button">Ремонтируемые
+               устройства</a>
+            <a class="main__button">Дополнительные услуги</a>
+            <a class="main__button">Цены на услуги</a>
+            <a class="main__button">Специальные цены</a>
+            <a class="main__button">Адреса сервисных центров</a>
+            <a class="main__button">Отзывы</a>
+         </nav>
+         <div class="main__company">
+            <div class="main__about">
+               <p class="main__text">
+                  Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
+                  отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+               </p>
+               <p class="main__text">
+                  Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера <span class="fs-text">,
+                     что подтверждает большое количество постоянных
+                     клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют
+                     нас родным и близким.</span>
+               </p>
+               <div class="main__more-text">
+                  <button class="main__show-more-button">Читать далее</button>
                </div>
-            </section>
+            </div>
+            <picture class="main__pic">
+               <source srcset="images/img.jpg" type="image/jpeg" media="(min-width:1120px)">
+               <source srcset="images/img-768.jpg" type="image/jpeg" media="(min-width:768px)">
+               <source srcset="images/img-320.jpg" type="image/jpeg" media="(max-width:768px)">
+               <img class="main__image" src="images/img.jpg" alt="Наша компания">
+            </picture>
          </div>
-      </main>
-   </div>
+      </section>
+   </main>
 </body>
 
 </html>
