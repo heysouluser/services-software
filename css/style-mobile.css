@@ -1,0 +1,120 @@
+body {
+   height: 100%;
+   font-size: 16px;
+   font-family: "TT Lakes";
+   width: 320px;
+   line-height: 1.5;
+}
+
+button {
+   background-color: #fff;
+}
+
+.header {
+}
+.header__menu {
+   padding: 18px 24px 50px;
+   display: flex;
+   justify-content: space-between;
+}
+.header__info {
+   display: flex;
+   align-items: center;
+}
+.header__info > .header__button {
+   margin-right: 16px;
+}
+.main {
+   padding: 0 24px 268px;
+}
+.main__nav {
+   display: flex;
+   flex-direction: column;
+}
+.main__button {
+   display: block;
+   color: #1b1c21;
+   margin-bottom: 32px;
+   letter-spacing: -0.2px;
+   position: relative;
+   transition: all 0.4s ease;
+}
+.main__button:last-child {
+   margin-bottom: 0;
+}
+.main__button:hover {
+   color: #7e7e82;
+}
+.main__button:active {
+   color: #54548d;
+}
+.main__button::before {
+   content: url("../images/icons/highlight-mobile.svg");
+   position: absolute;
+   opacity: 0;
+   top: -4px;
+   left: 0px;
+   transform: scale(0.7);
+   transition: all 0.6s ease;
+}
+.main__button:hover::before {
+   content: url("../images/icons/highlight-mobile.svg");
+   opacity: 1;
+   left: -24px;
+   transform: scale(1);
+}
+.footer {
+   padding: 0 24px 32px;
+}
+.footer__actions {
+   display: flex;
+   margin-bottom: 16px;
+}
+.footer__item {
+   margin-right: 16px;
+}
+.footer__item:last-child {
+   margin-right: 0;
+}
+.footer__button {
+}
+.footer__contacts {
+}
+.footer__email {
+   display: block;
+   letter-spacing: -0.2px;
+   color: #1b1c21;
+   margin-bottom: 12px;
+   transition: all 0.4s ease;
+}
+.footer__number {
+   display: block;
+   font-size: 24px;
+   line-height: 32px;
+   letter-spacing: -0.6px;
+   color: #1b1c21;
+   font-weight: bold;
+   margin-bottom: 40px;
+   transition: all 0.4s ease;
+}
+.footer__langs {
+   display: flex;
+}
+.footer__lang {
+   display: block;
+   margin-right: 7px;
+   transition: all 0.4s ease;
+}
+.footer__lang:last-child {
+   margin-right: 0;
+}
+.footer__email:hover,
+.footer__number:hover,
+.footer__lang:hover {
+   color: #7e7e82;
+}
+.footer__email:active,
+.footer__number:active,
+.footer__lang:active {
+   color: #54548d;
+}
