@@ -83,11 +83,13 @@ body {
 }
 
 .main__navigation {
-   display: flex;
    overflow-x: auto;
    margin-bottom: 24px;
 }
-.main__button {
+.main__list {
+   display: flex;
+}
+.main__link {
    display: block;
    white-space: nowrap;
    height: 40px;
@@ -99,12 +101,12 @@ body {
    border: 2px solid transparent;
    transition: all 0.4s ease;
 }
-.main__button:hover {
+.main__link:hover {
    background: #ffffff;
    border: 2px solid #b8ffec;
    border-radius: 6px;
 }
-.main__button:active {
+.main__link:active {
    background: #d2e5ec;
    border: 2px solid #b8ffec;
    border-radius: 6px;
@@ -191,8 +193,7 @@ body {
    .main__title {
       margin-bottom: 32px;
    }
-
-   .main__list {
+   .main__navigation {
       margin-bottom: 32px;
    }
    .main__company {
@@ -275,8 +276,10 @@ body {
    }
    .main__navigation {
       overflow-x: hidden;
-      flex-wrap: wrap;
       margin-bottom: 16px;
+   }
+   .main__list {
+      flex-wrap: wrap;
    }
    .main__image {
       margin-top: -9px;
