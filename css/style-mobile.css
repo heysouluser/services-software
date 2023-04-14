@@ -71,8 +71,7 @@ button {
    left: -24px;
    transform: scale(1);
 }
-.aside-burger__footer {
-}
+
 .aside-burger__actions {
    display: flex;
    margin-bottom: 16px;
@@ -83,10 +82,7 @@ button {
 .aside-burger__action-box:last-child {
    margin-right: 0;
 }
-.aside-burger__action {
-}
-.aside-burger__contacts {
-}
+
 .aside-burger__email {
    display: block;
    letter-spacing: -0.2px;
@@ -104,8 +100,7 @@ button {
    margin-bottom: 40px;
    transition: all 0.4s ease;
 }
-.aside-burger__langs {
-}
+
 .aside-burger__label {
    margin-right: 7px;
    transition: all 0.4s ease;
