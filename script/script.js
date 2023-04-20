@@ -45,4 +45,3 @@ function swiperCard() {
 }
 swiperCard();
 window.addEventListener("resize", swiperCard);
-
