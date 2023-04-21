@@ -1,3 +1,9 @@
+body {
+   font-size: 16px;
+   font-family: "TT Lakes";
+   line-height: 1.5;
+}
+
 .swiper {
    width: 100%;
    background: #f2f2f2;
@@ -6,8 +12,6 @@
    padding: 16px;
 }
 .brand-slider__title {
-   font-size: 16px;
-   line-height: 24px;
    letter-spacing: -0.2px;
    text-transform: uppercase;
    color: #7e7e82;
@@ -137,10 +141,22 @@
       margin-bottom: 16px;
       margin-right: 32px;
    }
+   .brand-slider__brand {
+      transition: background-color 0.4s ease 0s;
+   }
+   .brand-slider__brand:hover {
+      background-color: #f7f7f7;
+   }
    .brand-slider__slide:nth-child(3n) {
       margin-right: 32px;
    }
    .brand-slider {
       padding: 24px 32px 8px;
+   }
+   .brand-slider__show-more-button {
+      transition: all 0.3s ease 0s;
+   }
+   .brand-slider__show-more-button:hover {
+      color: #7e7e82;
    }
 }
