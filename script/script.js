@@ -53,8 +53,8 @@ function newSlide() {
    }
 }
 
-const newSlideAcer = newSlide();
-const newSlideApple = newSlide();
+const newSlideTen = newSlide();
+const newSlideEleven = newSlide();
 
 showMore.addEventListener('click', sliderActions);
 
