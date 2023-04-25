@@ -9,6 +9,7 @@ const slide = sliderWrapper.querySelector('.brand-slider__slide');
 const showMoreBox = document.querySelector('.brand-slider__show-more');
 const showMore = showMoreBox.querySelector('.brand-slider__show-more-button');
 const cloneSlide = slide.cloneNode(true);
+const oneMoreCloneSlide = slide.cloneNode(true);
 
 document.addEventListener('DOMContentLoaded', function () {
    if (mediaQuery768px.matches) {
@@ -19,7 +20,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
    if (mediaQuery1120px.matches) {
       let newSlide = sliderWrapper.appendChild(cloneSlide);
+      let oneMoreNewSlide = sliderWrapper.appendChild(oneMoreCloneSlide);
       newSlide.classList.remove('swiper-slide');
+      oneMoreNewSlide.classList.remove('swiper-slide');
    }
 
    function swiperInit() {
@@ -55,9 +58,12 @@ document.addEventListener('DOMContentLoaded', function () {
    function newSlide(isFullSize) {
       if (isFullSize) {
          let newSlide = sliderWrapper.appendChild(cloneSlide);
+         let oneMoreNewSlide = sliderWrapper.appendChild(oneMoreCloneSlide);
          newSlide.classList.remove('swiper-slide');
+         oneMoreNewSlide.classList.remove('swiper-slide');
       }
       else if (!isFullSize) {
+         sliderWrapper.removeChild(sliderWrapper.lastChild);
          sliderWrapper.removeChild(sliderWrapper.lastChild);
       }
    }
