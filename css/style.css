@@ -26,7 +26,7 @@ body {
    position: relative;
 }
 .header__info::after {
-   content: url("../images/icons/menu/divider.svg");
+   content: url("../assets/images/icons/menu/divider.svg");
    position: absolute;
    top: 11px;
    left: 172px;
@@ -36,7 +36,7 @@ body {
    position: relative;
 }
 .header__list > .header__button:after {
-   content: url("../images/icons/menu/divider.svg");
+   content: url("../assets/images/icons/menu/divider.svg");
    position: absolute;
    top: 11px;
    left: 172px;
@@ -67,7 +67,7 @@ body {
 }
 
 .title::before {
-   content: url("../images/icons/highlight.svg");
+   content: url("../assets/images/icons/highlight.svg");
    position: absolute;
    top: 21px;
    left: 0;
@@ -139,7 +139,7 @@ body {
    color: #54548d;
 }
 .main__show-more-button::before {
-   content: url("../images/icons/arrow-down.svg");
+   content: url("../assets/images/icons/arrow-down.svg");
    padding-right: 16px;
 }
 .main__pic {
@@ -181,7 +181,7 @@ body {
    }
 
    .header__actions li:nth-child(3)::after {
-      content: url("../images/icons/menu/divider.svg");
+      content: url("../assets/images/icons/menu/divider.svg");
       position: absolute;
       top: 4px;
       left: 171px;
@@ -258,14 +258,14 @@ body {
       margin-right: 32px;
    }
    .main__action:first-child::after {
-      content: url("../images/icons/menu/repair.svg");
+      content: url("../assets/images/icons/menu/repair.svg");
       padding-left: 8px;
       position: absolute;
       top: -9px;
       left: 124px;
    }
    .main__action:nth-child(2)::after {
-      content: url("../images/icons/menu/checkstatus.svg");
+      content: url("../assets/images/icons/menu/checkstatus.svg");
       padding-left: 8px;
       position: absolute;
       top: -9px;

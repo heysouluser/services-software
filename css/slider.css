@@ -4,10 +4,10 @@ body {
    line-height: 1.5;
 }
 
-.swiper {
+/* .swiper {
    width: 100%;
    background: #f2f2f2;
-}
+} */
 .brand-slider__title-box {
    padding: 16px;
 }
@@ -29,6 +29,8 @@ body {
 .brand-slider {
    position: relative;
    padding: 16px 0 66px 16px;
+   width: 100%;
+   background: #f2f2f2;
 }
 .brand-slider__transparent-block {
    position: absolute;
@@ -41,16 +43,22 @@ body {
 }
 .brand-slider__slide {
    width: 240px;
-   height: auto;
+   height: 74px;
 }
 .brand-slider__brand {
+   width: 238px;
+   height: 72px;
    border: 1px solid #eaeaea;
    border-radius: 6px;
-   padding: 16px;
+   padding: 0 16px;
    display: flex;
    justify-content: space-between;
    align-items: center;
    background-color: #fff;
+}
+
+.brand-slider__brand:focus {
+   border: 1px solid #ff76a0;
 }
 
 .brand-slider__show-more-button {
@@ -65,24 +73,23 @@ body {
       padding: 24px;
    }
    .brand-slider {
-      height: 210px;
+      height: 200px;
       padding: 24px 24px 8px;
       transition: height 0.5s ease;
    }
    .brand-slider.brand-slider-full {
-      height: 310px;
+      height: 280px;
    }
    .brand-slider__wrapper {
       display: flex;
       flex-wrap: wrap;
+      gap: 16px 24px;
    }
    .brand-slider__slide {
       width: 224px;
-      margin-bottom: 16px;
-      margin-right: 24px;
    }
-   .brand-slider__slide:nth-child(3n) {
-      margin-right: 0;
+   .brand-slider__brand {
+      width: 222px;
    }
    .brand-slider__show-more {
       padding: 0 0 32px 32px;
@@ -127,31 +134,27 @@ body {
    .brand-slider__show-more-button._show::after {
       transform: rotate(225deg);
    }
-}
-
-@media (min-width: 968px) {
-   .brand-slider__slide:nth-child(3n) {
-      margin-right: 24px;
+   ._off {
+      display: none;
    }
 }
 
 @media (min-width: 1120px) {
+   .brand-slider {
+      padding: 24px 32px 8px;
+   }
+   .brand-slider__wrapper {
+      gap: 16px 32px;
+   }
    .brand-slider__slide {
       width: 240px;
-      margin-bottom: 16px;
-      margin-right: 32px;
    }
    .brand-slider__brand {
       transition: background-color 0.4s ease 0s;
+      width: 240px;
    }
    .brand-slider__brand:hover {
       background-color: #f7f7f7;
-   }
-   .brand-slider__slide:nth-child(3n) {
-      margin-right: 32px;
-   }
-   .brand-slider {
-      padding: 24px 32px 8px;
    }
    .brand-slider__show-more-button {
       transition: all 0.3s ease 0s;
